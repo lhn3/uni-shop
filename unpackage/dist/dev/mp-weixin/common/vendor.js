@@ -8763,11 +8763,11 @@ var myRequest = function myRequest(data) {
         resolve(res);
       },
       fail: function fail(err) {
+        reject(err);
         return uni.showToast({
           title: '数据请求失败',
           icon: 'error' });
 
-        reject(err);
       } });
 
   });

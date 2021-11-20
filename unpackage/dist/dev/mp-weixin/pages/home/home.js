@@ -134,11 +134,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
-      bunch: [] };
+      banner: [] };
 
   },
 
@@ -147,7 +151,8 @@ var _default =
                 _this.$myRequest({
                   url: "/api/getlunbo" }));case 2:res = _context.sent;
 
-              _this.bunch = res.data.message;case 4:case "end":return _context.stop();}}}, _callee);}))();
+              _this.banner = res.data.message;
+              console.log(_this.banner);case 5:case "end":return _context.stop();}}}, _callee);}))();
   },
   methods: {
     // 获取轮播图数据

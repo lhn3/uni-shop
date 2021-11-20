@@ -28,8 +28,7 @@
                 "navigationBarTitleText": "会员",
                 "enablePullDownRefresh": false
             }
-        }
-   
+        } 
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
