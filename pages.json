@@ -1,16 +1,72 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
+		    "path" : "pages/home/home",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "首页"
+		    }
 		}
-	],
+		,{
+		    "path" : "pages/news/news",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "资讯"
+		    }
+		}
+	    ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车"
+            }
+        }
+        ,{
+            "path" : "pages/member/member",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "会员",
+                "enablePullDownRefresh": false
+            }
+        }
+   
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#b50103",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh":true
+	},
+	"tabBar":{
+		"selectedColor":"#b50103",
+		"borderStyle":"black",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/home/home",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home-active.png"
+			},
+			{
+				"text":"资讯",
+				"pagePath":"pages/news/news",
+				"iconPath":"static/icon/news.png",
+				"selectedIconPath":"static/icon/news-active.png"
+			},
+	
+			{
+				"text":"购物车",
+				"pagePath":"pages/cart/cart",
+				"iconPath":"static/icon/cart.png",
+				"selectedIconPath":"static/icon/cart-active.png"
+			},
+			{
+				"text":"会员",
+				"pagePath":"pages/member/member",
+				"iconPath":"static/icon/member.png",
+				"selectedIconPath":"static/icon/member-active.png"
+			}
+		]
 	}
 }
