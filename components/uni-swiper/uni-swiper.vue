@@ -15,14 +15,6 @@
 				type:Array,
 				default:()=>[]
 			}
-		},
-		data() {
-			return {
-				
-			}
-		},
-		methods: {
-			
 		}
 	}
 </script>

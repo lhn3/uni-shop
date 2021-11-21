@@ -29,6 +29,23 @@
                 "enablePullDownRefresh": false
             }
         } 
+        ,{
+            "path" : "pages/home/goods/goods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "超市"
+            }
+            
+        }
+        ,{
+            "path" : "components/uni-hotGoods/uni-hotGoods",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -68,4 +85,12 @@
 			}
 		]
 	}
+	// 组件化配置
+	// "easycom":{
+	// 	//是否开启自动扫描
+	// 	"autoscan":true,
+	// 	"custom":{
+	// 		"uni-(.*)": "@/components/uni-$1/uni-$1.vue"
+	// 	}
+	// }
 }
