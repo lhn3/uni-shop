@@ -1,0 +1,1 @@
+<view class="contact"><image class="img" src="../../../static/image/mj.jpg"></image><view class="info"><text data-event-opts="{{[['tap',[['call',['$event']]]]]}}" bindtap="__e">联系电话：13559476203(点击拨打)</text><text>地址：福建省福州市闽侯县上街镇闽江学院</text></view><map class="map" longitude="{{longitude}}" latitude="{{longitude}}" markers="{{markers}}"></map></view>

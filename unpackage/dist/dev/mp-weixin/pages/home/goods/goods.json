@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "超市",
+  "usingComponents": {
+    "unigoods-list": "/components/uni-goodsList/uni-goodsList"
+  }
+}

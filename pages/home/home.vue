@@ -29,12 +29,12 @@
 					{
 						title:"联系我们",
 						icon:"iconfont icon-guanyuwomen",
-						path:"/pages/home/goods/goods"
+						path:"/pages/home/contact/contact"
 					},
 					{
 						title:"社区图片",
 						icon:"iconfont icon-tupian",
-						path:"/pages/home/goods/goods"
+						path:"/pages/home/pics/pics"
 					},
 					{
 						title:"学习视频",

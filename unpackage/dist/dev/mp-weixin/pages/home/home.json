@@ -1,4 +1,8 @@
 {
   "navigationBarTitleText": "首页",
-  "usingComponents": {}
+  "usingComponents": {
+    "uniswiper": "/components/uni-swiper/uni-swiper",
+    "uninav": "/components/uni-nav/uni-nav",
+    "unigoods-list": "/components/uni-goodsList/uni-goodsList"
+  }
 }
