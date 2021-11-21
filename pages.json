@@ -35,16 +35,6 @@
             {
                 "navigationBarTitleText": "超市"
             }
-            
-        }
-        ,{
-            "path" : "components/uni-hotGoods/uni-hotGoods",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
         }
     ],
 	"globalStyle": {

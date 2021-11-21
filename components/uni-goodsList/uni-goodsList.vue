@@ -5,7 +5,7 @@
 		</view>
 		<view class="hot-goods">
 			<!-- 每一件商品 -->
-			<view class="goods" v-for="item in hotGoods" :key="item.id">
+			<view class="goods" v-for="item in goodsList" :key="item.id">
 				<image mode="aspectFill"
 				src="https://mms2.baidu.com/it/u=928603844,279344116&fm=253&app=120&f=JPEG"></image>
 				<view class="goods-price">
@@ -15,12 +15,13 @@
 				<view class="goods-title">{{item.title}}</view>
 			</view>
 		</view>
+		<text class="bottom" v-if="!nextPage">------我是有底线的------</text>
 	</view>
 </template>
 
 <script>
 	export default {
-		props:["title","hotGoods"]
+		props:["title","goodsList","nextPage"]
 	}
 </script>
 
@@ -76,6 +77,12 @@
 			}
 			
 		}
+	}
+	.bottom{
+		display: block;
+		text-align: center;
+		line-height: 60rpx;
+		color:#C0C0C0;
 	}
 }
 </style>
