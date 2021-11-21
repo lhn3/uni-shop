@@ -39,7 +39,7 @@
 					{
 						title:"学习视频",
 						icon:"iconfont icon-shipin",
-						path:"/pages/home/goods/goods"
+						path:"/pages/home/vm/vm"
 					},
 				],
 				pageindex:1,

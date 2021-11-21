@@ -4,7 +4,8 @@
 		    "path" : "pages/home/home",
 		    "style" :                                                                                    
 		    {
-		        "navigationBarTitleText": "首页"
+		        "navigationBarTitleText": "首页",
+				"enablePullDownRefresh":true
 		    }
 		}
 		,{
@@ -25,34 +26,44 @@
             "path" : "pages/member/member",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "会员",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "会员"
             }
         } 
         ,{
             "path" : "pages/home/goods/goods",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "超市"
+                "navigationBarTitleText": "超市",
+				"enablePullDownRefresh":true
             }
         }
         ,{
             "path" : "pages/home/contact/contact",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "联系我们",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "联系我们"
             }
-            
         }
         ,{
             "path" : "pages/home/pics/pics",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "社区图片",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "社区图片"
             }
-            
+        }
+        ,{
+            "path" : "pages/home/vm/vm",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "学习视频"
+            }
+        }
+        ,{
+            "path" : "pages/news/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情页"
+            }
         }
     ],
 	"globalStyle": {
@@ -60,7 +71,7 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#b50103",
 		"backgroundColor": "#F8F8F8",
-		"enablePullDownRefresh":true
+		"enablePullDownRefresh":false
 	},
 	"tabBar":{
 		"selectedColor":"#b50103",
