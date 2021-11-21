@@ -32,19 +32,6 @@
 				this.$emit('toDetail',id)
 			}
 		},
-		filters:{
-			timeFilter(time){
-				let date=new Date(time)
-				let year=date.getFullYear()
-				// 不足两位，前面用0补齐
-				let month=(date.getMonth()+1).toString().padStart(2,0)
-				let day=date.getDate().toString().padStart(2,0)
-				let hours=date.getHours().toString().padStart(2,0)
-				let min=date.getMinutes().toString().padStart(2,0)
-				let sencond=date.getSeconds().toString().padStart(2,0)
-				return `${year}-${month}-${day} ${hours}:${min}:${sencond}`
-			}
-		}
 	}
 </script>
 
