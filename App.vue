@@ -15,4 +15,9 @@
 <style>
 	/*每个页面公共css */
 	@import url("static/fonts/iconfont.css");
+	/* 商品详情页的图片样式 */
+	.gomeImgLoad{
+		width: 750rpx;
+		/* height: auto; */
+	}
 </style>

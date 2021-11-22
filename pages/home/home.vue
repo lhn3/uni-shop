@@ -7,7 +7,7 @@
 		<uninav :navs="navs"></uninav>
 		
 		<!-- 推荐商品 -->
-		<unigoodsList title="推荐商品" :goodsList="goodsList" :nextPage="nextPage"></unigoodsList>
+		<unigoodsList title="推荐商品" :goodsList="goodsList" :nextPage="nextPage" @getGoodsDetail="getGoodsDetail"></unigoodsList>
 		
 	</view>
 </template>
@@ -85,6 +85,7 @@
 			},500)
 		},
 		methods:{
+			// 请求商品列表
 			async getGoodsList(){
 				let goodsList=await this.$myRequest({
 					url:"/api/getgoods?pageindex="+this.pageindex
@@ -94,6 +95,12 @@
 					 this.nextPage=false
 				}
 				this.goodsList=[...this.goodsList,...goodsList.data.message]
+			},
+			// 进入商品详情页
+			getGoodsDetail(id){
+				uni.navigateTo({
+					url:'./goods/goodsDetail/goodsDetail?id='+id
+				})
 			}
 		}
 	}

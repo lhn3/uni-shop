@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "资讯",
-  "usingComponents": {}
+  "usingComponents": {
+    "uninews-item": "/components/uni-newsItem/uni-newsItem"
+  }
 }

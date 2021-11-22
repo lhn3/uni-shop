@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/uni-goodsList/uni-goodsList":1,"components/uni-nav/uni-nav":1,"components/uni-swiper/uni-swiper":1};
+/******/ 		var cssChunks = {"components/uni-goodsList/uni-goodsList":1,"components/uni-nav/uni-nav":1,"components/uni-swiper/uni-swiper":1,"components/uni-newsItem/uni-newsItem":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/uni-goodsList/uni-goodsList":"components/uni-goodsList/uni-goodsList","components/uni-nav/uni-nav":"components/uni-nav/uni-nav","components/uni-swiper/uni-swiper":"components/uni-swiper/uni-swiper"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/uni-goodsList/uni-goodsList":"components/uni-goodsList/uni-goodsList","components/uni-nav/uni-nav":"components/uni-nav/uni-nav","components/uni-swiper/uni-swiper":"components/uni-swiper/uni-swiper","components/uni-newsItem/uni-newsItem":"components/uni-newsItem/uni-newsItem"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

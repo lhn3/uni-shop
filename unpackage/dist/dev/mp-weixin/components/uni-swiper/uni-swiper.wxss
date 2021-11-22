@@ -26,7 +26,7 @@
 /* 文章场景相关 */
 .swiper swiper {
   width: 750rpx;
-  height: 380rpx;
+  height: 420rpx;
 }
 .swiper image {
   width: 100%;

@@ -60,14 +60,14 @@ page {
   color: #333;
   line-height: 60rpx;
 }
+.pics .right .message {
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #999999;
+}
 .active {
   background-color: #b50103;
   color: #fff !important;
-}
-.message {
-  font-size: 60rpx;
-  text-align: center;
-  line-height: 120rpx;
-  color: #999999;
 }
 

@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "uniswiper": "/components/uni-swiper/uni-swiper",
     "uninav": "/components/uni-nav/uni-nav",

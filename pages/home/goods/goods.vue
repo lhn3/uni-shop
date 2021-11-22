@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<unigoodsList title="商品列表" :goodsList="goodsList" :nextPage="nextPage"></unigoodsList>
+		<unigoodsList title="商品列表" :goodsList="goodsList" :nextPage="nextPage" @getGoodsDetail="getGoodsDetail"></unigoodsList>
 	</view>
 </template>
 
@@ -50,6 +50,12 @@
 					 this.nextPage=false
 				}
 				this.goodsList=[...this.goodsList,...goodsList.data.message]
+			},
+			// 进入商品详情页
+			getGoodsDetail(id){
+				uni.navigateTo({
+					url:'./goodsDetail/goodsDetail?id='+id
+				})
 			}
 		}
 	}

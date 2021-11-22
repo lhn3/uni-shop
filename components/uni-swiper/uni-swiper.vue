@@ -23,7 +23,7 @@
 .swiper{
 	swiper{
 		width: 750rpx;
-		height: 380rpx;
+		height: 420rpx;
 	}
 	image{
 		width: 100%;

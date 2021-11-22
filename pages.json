@@ -62,8 +62,16 @@
             "path" : "pages/news/detail/detail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "详情页"
+                "navigationBarTitleText": "资讯详情"
             }
+        }
+        ,{
+            "path" : "pages/home/goods/goodsDetail/goodsDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情"
+            }
+            
         }
     ],
 	"globalStyle": {

@@ -5,7 +5,7 @@
 		</view>
 		<view class="hot-goods">
 			<!-- 每一件商品 -->
-			<view class="goods" v-for="item in goodsList" :key="item.id">
+			<view class="goods" v-for="item in goodsList" :key="item.id" @click="getGoodsDetail(item.id)">
 				<image mode="aspectFill"
 				src="https://mms2.baidu.com/it/u=928603844,279344116&fm=253&app=120&f=JPEG"></image>
 				<view class="goods-price">
@@ -21,7 +21,13 @@
 
 <script>
 	export default {
-		props:["title","goodsList","nextPage"]
+		props:["title","goodsList","nextPage"],
+		methods:{
+			// 点击发射进入详情页的事件
+			getGoodsDetail(id){
+				this.$emit('getGoodsDetail',id)
+			}
+		}
 	}
 </script>
 

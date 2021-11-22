@@ -14,6 +14,19 @@ var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 3));
 var _request = __webpack_require__(/*! serve/request.js */ 12);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 // 全局注册封装的请求
 _vue.default.prototype.$myRequest = _request.myRequest;
+// 全局过滤器
+_vue.default.filter('timeFilter', function (data) {
+  var res = new Date(data);
+  var year = res.getFullYear();
+  // 不足两位，前面用0补齐
+  var month = (res.getMonth() + 1).toString().padStart(2, 0);
+  var day = res.getDate().toString().padStart(2, 0);
+  var hours = res.getHours().toString().padStart(2, 0);
+  var min = res.getMinutes().toString().padStart(2, 0);
+  var sencond = res.getSeconds().toString().padStart(2, 0);
+  return "".concat(year, "-").concat(month, "-").concat(day, " ").concat(hours, ":").concat(min, ":").concat(sencond);
+});
+
 
 _vue.default.config.productionTip = false;
 _App.default.mpType = 'app';

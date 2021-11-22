@@ -1,0 +1,10 @@
+
+.info{
+	 display: block;
+	 margin: 0 auto;
+	 font-size: 40rpx;
+	 text-align: center;
+	 line-height: 100rpx;
+	 color: #999999;
+}
+
